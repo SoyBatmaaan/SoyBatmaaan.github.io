@@ -4,100 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
-    <title>DG | Home</title>
+    <title>DUCKGAMES</title>
 </head>
 <body>
-    
-    <header>
-        <div id="header__logo">
-            <a href="./index.html"><img src="./assets/logo-large.png" alt="duckgames logo oficial"></a>
+    <header class="container-fluid">
+        <div class="row h-100 align-items-center">
+            <div class="col-4">
+                <img class="img-fluid" src="./assets/logo-large.png" alt="DuckGames Inicio Logo">
+            </div>
+            <nav class="col-6 d-flex justify-content-around text-light ps-4 pe-4 fs-4">
+                    <div class="navitem"><a class="text-light text-decoration-none" href="/index.html">INICIO</a></div>
+                    <div class="navitem"><a class="text-light text-decoration-none" href="./pages/juegos.html">JUEGOS</a></div>
+                    <div class="navitem"><a class="text-light text-decoration-none" href="./pages/noticias.html">NOTICIAS</a></div>
+                    <div class="navitem"><a class="text-light text-decoration-none" href="./pages/contacto.html">CONTACTO</a></div>
+                    <div class="navitem"><a class="text-light text-decoration-none" href="./pages/faq.html">FAQ</a></div>
+            </nav>
+            <div id="header__login" class="col-2 text-center text-light">
+                <a class="text-light text-decoration-none" href="./pages/login.html">Bienvenido!<br>Inicia sesión acá!</a>
+            </div>
         </div>
-
-        <nav>
-            <ul>
-                <li><a id="a-selected" href="index.html">INICIO</a></li>
-                <li><a href="pages/catalogo.html">CATALOGO</a></li>
-                <li><a href="pages/noticias.html">NOTICIAS</a></li>
-                <li><a href="pages/contacto.html">CONTACTO</a></li>
-                <li><a href="pages/faq.html">FAQ</a></li>
-            </ul>
-        </nav>
-
-        <div id="header__login-container">
-            <p id="header-logincontainer-p">Bienvenido!<br>Inicia sesión haciendo click <a href="./pages/login.html">acá</a>!</p>
-        </div>
-
     </header>
 
+    <main id="index__main" class="container-fluid pt-5 pb-5 ps-0 pe-0">
 
+        <div class="container pt-5"><b class="fs-1 text-light">Destacados!</b></div>
 
-    <main>
-        <section id="main__section-1">
-            <div class="slideshow-container">
-
-                <div class="mySlides fade">
-                    <div class="numbertext">1 / 3</div>
-                    <img src="./assets/c1.jpg" style="width:100%" alt="COD:black ops 4">
-                    <div class="text">Call of Duty: Black Ops 4</div>
+        <section class="container pt-1 pb-5">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/c1.jpg" class="d-block w-100" alt="Call of Duty: Black Ops 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/c2.jpg" class="d-block w-100" alt="PlayerUnknown's Battlegrounds">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/c3.jpg" class="d-block w-100" alt="Counter-Strike: Global Offensive">
+                    </div>
                 </div>
-                
-                <div class="mySlides fade">
-                    <div class="numbertext">2 / 3</div>
-                    <img src="./assets/c2.jpg" style="width:100%" alt="PUBG">
-                    <div class="text">PlayerUnknown's Battlegrounds</div>
-                </div>
-                
-                <div class="mySlides fade">
-                    <div class="numbertext">3 / 3</div>
-                    <img src="./assets/c3.jpg" style="width:100%" alt="CSGO">
-                    <div class="text">Counter-Strike: Global Offensive</div>
-                </div>
-                
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
-                
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <br>
-                
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
-                <span class="dot" onclick="currentSlide(3)"></span> 
-            </div>
-
-            <article id="main__section-1__article">
-                <p id="main__section-1__article__title">¡Somos DUCKGAMES!</p>
-                <p id="main__section-1__article__parrafo">Fundada en 2004, DUCKGAMES (DG) 
-                    es una organización sin fines de lucro compuesta por estudios y desarrolladores de
-                     videojuegos que trabajan para promover el crecimiento del entretenimiento digital
-                      e interactivo producido en Argentina.
-                    DG es una institución intermedia que articula acciones entre los estudios y 
-                    emprendedores dedicados al desarrollo de videojuego y el sector público, el sector 
-                    privado y la academia, impulsando y potenciando el desarrollo de la industria local de videojuegos.
-                </P>
-            </article>
         </section>
 
-        <section id="main__section-2">
-            <div id="main__section-2__title">
-                <p>Herramientas y Patrocinadores</p>
-            </div>
-            <article id="main__section-2__article">
-                <img id="main__section-2__article__img-1" src="./assets/UE_white.png" alt="unreal engine logo">
-                <img id="main__section-2__article__img-2" src="./assets/binance-logo-1.png" alt="unity logo">
-                <img id="main__section-2__article__img-3" src="./assets/venture-capital-logo-png-transparent.png" alt="venture capital logo">
-                <img id="main__section-2__article__img-4" src="./assets/Official_unity_logo.png" alt="binance exchange logo">
-            </article>
-        </section>
+        <article class="container-fluid bg-black bg-opacity-75 text-light text-center mt-5 mb-5 pt-4 pb-4 ps-4 pe-4">
+            <b class="fs-1">¡Somos DUCKGAMES!</b>
+            <p class="fs-5">Fundada en 2004, DUCKGAMES (DG) 
+                es una organización sin fines de lucro compuesta por estudios y desarrolladores de
+                videojuegos que trabajan para promover el crecimiento del entretenimiento digital
+                e interactivo producido en Argentina.
+                DG es una institución intermedia que articula acciones entre los estudios y 
+                emprendedores dedicados al desarrollo de videojuego y el sector público, el sector 
+                privado y la academia, impulsando y potenciando el desarrollo de la industria local de videojuegos.
+            </P>
+        </article>
     </main>
-    
-    
-    <footer>
+
+    <section class="container-fluid text-center text-light pt-4 pb-4" id="index__main__section-2">
+        <b class="fs-1">Herramientas y Patrocinadores</b>
+        <div class="d-flex justify-content-around mt-5 mb-5" id="index__main__section-2__container">
+            <img src="./assets/UE_white.png" alt="">
+            <img src="./assets/binance-logo-1.png" alt="">
+            <img src="./assets/venture_capital.png" alt="">
+        </div>
+    </section>
+
+
+    <footer class="container-fluid text-light text-center">
         <p>Las marcas y logos de duckgames.com | duckgames.com/tv | duckgames.com/catalogo son propiedad de Newton Station SRL
             Todos los derechos reservados 2022</p>
     </footer>
-
-    <script src="./scripts/slide.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 </body>
 </html>

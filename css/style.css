@@ -1,527 +1,117 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+header{
+    height: 80px;
+    background: linear-gradient(30deg, #280037, #3c0029,#002b58, #5a0015);
+    background-size: 300% 300%;
+    animation: fade 15s ease-in-out infinite;
+}
+
+p{
     font-family: Caviar;
 }
 
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {vertical-align: middle;}
-
-body{
-    height: 100vh;
-    width: 100vw;
-    background-color: gray;
-}
-
-/* ---------------------------------------------------------- LOGIN */
-#login-main{
-    height: 97vh;
-    background: linear-gradient(30deg, #280037, #3c0029,#002b58, #5a0015) no-repeat;
-    color: #fff;
-    background-size: 400% 400%;
-    position: relative;
-    animation: fade 15s ease-in-out infinite;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#login-main__article__form__title{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: 52px;
-    color: white;
-}
-
-#login-main__article__form a{
-    color:rgb(218, 200, 0); 
-    text-decoration: none;
-}#login-main__article__form a:hover{
-    color: rgb(255,255,255);
-}
-
-#login-main__article{
-    padding: 10px;
-    text-align: center;
-    height: 400px;
-    width: 400px;
-}
-#form__input-email, #form__input-contraseña{
-    height: 25px;
-    margin: 10px;
-}
-
-#form__boton-login{
-    width: 70px;
-    height: 25px;
-    margin: 10px;
-}
-/*---------------------------------------------------------- HEADER (Siempre es el mismo, menos para login y register).*/
-header{
-    min-height: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-
-    background: linear-gradient(30deg, #280037, #3c0029,#002b58, #5a0015);
-    background-size: 300% 300%;
-    animation: fade 15s ease-in-out infinite;
-}
-
-#header__logo{
-    height: 45px;
-    width: 350px;
-}
-
-#header__logo img{
-    height: 100%;
-    width: 100%;
-}
-
-nav{
-    width: 600px;
-}
-
-nav a{
+b{
     font-family: CaviarBold;
-    text-decoration: none;
-    font-size: 22px;
-    color: rgb(213, 213, 213);
 }
 
-#a-selected{
-    border-bottom: 3.5px solid rgb(213, 213, 213);
-}
-
-nav a:hover{
-    border-bottom: 3.5px solid white;
-    color: white;
-}
-
-
-
-ul{
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-}
-
-
-
-#header__login-container{
-    color: white;
-    font-family: CaviarBold;
-    font-size: 18px;
-    text-align: center;
-}
-
-#header__login-container a{
-    color:rgb(218, 200, 0); 
-    text-decoration: none;
-}
-
-
-/*--------------------------------------------------------------- MAIN */
-#main__section-1{
-    background-color: rgb(87, 87, 185);
-    background-image: url(../assets/sunset.gif);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-    padding: 80px 0 80px 0;
-}
-
-
-/* CARRUSEL */
-.slideshow-container {
-    max-width: 1200px;
-    position: relative;
-    margin: auto;
-}
-  
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-}
-  
-.text {
-    color: #f2f2f2;
-    font-size: 22px;
-    font-family: CaviarBold;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
-
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-  
-.active, .dot:hover {
-    background-color: #717171;
-}
-/* === */
-#main__section-1__article{
-    display: flex;
-    height: 250px;
-    margin: 100px 0 50px 0;
-    background-color: rgba(0,0,0, 0.7);
-    color: white;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 20px;
-}
-
-#main__section-1__article__title{
-    font-family: CaviarBold;
-    font-size: 28px;
-}
-
-#main__section-1__article__parrafo{
-    font-size: 20px;
-}
-
-#main__section-2{
-    padding: 10px 0 10px 0;
-    background: linear-gradient(30deg, #280037, #3c0029,#002b58, #5a0015);
-    background-size: 300% 300%;
-    animation: fade 15s ease-in-out infinite;
-}
-
-#main__section-2__title p{
-    margin: 10px 0 10px 0;
-    text-align: center;
-    color: white;
-    font-family: CaviarBold;
-    font-size: 28px;
-}
-
-#main__section-2__article{
-    display: flex;
-    justify-content: space-around;
-}
-
-#main_section-2__article img{
-    justify-content: space-around;
-}
-
-#main__section-2__article__title p{
-    font-family: CaviarBold;
-    color: white;
-}
-
-#main__section-2__article__img-1{
-    height: 200px;
-    width: 250px;
-}#main__section-2__article__img-2{
-    height: 220px;
-    width: 350px;
-}#main__section-2__article__img-3{
-    height: 250px;
-    width: 250px;
-}#main__section-2__article__img-4{
-    height: 200px;
-    width: 450px;
-}  
-
-/* ------------------------------------------------------------ MAIN DE CONTACTO */
-#main-contacto{
-    background-image: url(../assets/arcaderetro.gif);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-    padding: 80px 0 80px 0;
-}
-
-#main-contacto__container{
-    display: flex;
-    justify-items: baseline;
-    justify-content: space-around;
-}
-
-#main-contacto__container__parrafo{
-    width: 700px;
-    height: 200px;
-
-    display: flex;
-    margin: 100px 0 50px 0;
-    background-color: rgba(0,0,0, 0.8);
-    color: white;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-}
-#main-contacto__container__parrafo p{
-    text-align: center;
-    color: white;
-    font-family: CaviarItalic;
-    font-size: 26px;
-}
-
-#mapa{
-    background-color: gray;
-    width: 700px;
-    height: 500px;
-    border: 0;
-}
-
-#main-contacto__info-container{
-    margin: 80px 0 0 0;
-    height: 80px;
-    background-color: rgba(0,0,0, 0.7);
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    
-}
-
-#main-contacto__info-container p{
-    color: white;
-    font-size: 26px;
-}
-
-#container-info-1, #container-info-2{
-    display: flex;
-}
-
-#info-icon1{
-    margin: 0 5px 0 5px;
-    height: 33px;
-    width: 33px; 
-}#info-icon2{
-    margin: 0 5px 0 5px;
-    height: 33px;
-    width: 33px;
-}
-/* =============================================================== MAIN de CATALOGO */
-#catalogo-main{
-    display: flex;
-    justify-content: center;
-    padding: 15      0px;
-    flex-direction: column;
-    background-image: url(../assets/loopbackground4.gif);
-    background-size: cover;
-    background-position: center;
-}
-
-#catalogo-main__box{
-    display: flex;
-    flex-direction: column;
-    height: 1000px;
-    justify-content: space-between;
-}
-.box-juego{
-    background-color: rgb(24, 24, 24);
-    display: flex;
-    border: 1px solid white;
-}
-
-.box-info{
-    padding: 10px;
-    justify-items: end;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-left: 1px solid white;
-}
-
-.box-info p{
-    text-align: left;
-    color: white;
-    font-size: 15px;
-}
-
-.btn-comprar{
-    font-family: CaviarBold;
-    height: 25px;
-    width: 80px;
-}
-/* =============================================================== FOOTER (Siempre es el mismo)*/
-footer{
-    padding: 5px 20px 5px 20px;
-    background-color: rgb(144, 68, 174);
-    text-align: center;
-
+footer {
+    height: 30px;
     background-color: #280037;
 }
 
-footer p{
-    color:white;
+#index__main{
+    background-color: palevioletred;
+    background-image: url(/assets/sunset.gif) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: bottom;
+}#juegos__main{
+    background-image: url(/assets/retrocity.gif) !important;
+    background-repeat: no-repeat !important;
+    background-position: center  !important;
+    background-size: cover;
+}#noticias__main{
+    height: 1000px;
+    background-image: url(/assets/loopbackground.gif) !important;
+    background-repeat: no-repeat !important;
+    background-position: center  !important;
+    background-size: cover;
+}#contacto__main{
+    height: 1000px;
+    background-image: url(/assets/arcaderetro.gif) !important;
+    background-repeat: no-repeat !important;
+    background-position: center  !important;
+    background-size: cover;
 }
 
-/* =============================================================== MEDIA QUERY, ANIMATIONS, IMPORT*/
- 
-@media only screen and (max-width: 1300px){
-    header{
-        flex-direction: column;
-    }
-
-    #header__logo{
-        margin: 25px 0px 10px 0px; 
-    }
-
-    nav{
-        margin: 30px 0px 30px 0px;
-    }
-
-    #header__login-container{
-        display: none;
-    }
-
-    #main__section-1__article{
-        height: 350px;
-    }
-
-    #main__section-2{
-        padding: 30px 0 30px 0;
-    }
-
-    #main__section-2__title{
-        margin: 30px 0 30px 0;
-    }
-
-    #main__section-2__article{
-        align-items: center;
-        flex-direction: column;
-    }
-
-    #main__section-2__article img{
-        margin: 50px 0 50px 0;
-    }
-
-    #main-contacto__container{
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    #mapa{
-        margin: 100px 0 50px 0;
-        width: 600px;
-    }
+#mapa{
+    margin: 0px;
+    height: 480px;
+    width: 620px;
 }
 
-
-@media only screen and (max-width: 768px){
-    header{
-        flex-direction: column;
-    }
-
-    #header__logo{
-        margin: 25px 0px 10px 0px;
-    }
-
-    nav{
-        margin: 0px 0px 10px 0px;
-        width: 370px;
-    }
-
-    ul{
-        text-align: center;
-        flex-direction: column;
-    }
-
-    li{
-        margin: 5px 0 5px 0;
-    }
-
-    nav a{
-        font-size: 20px;
-        justify-content: space-around;
-    }
-
-    #header__login-container{
-        display: none;
-    }
-
-    .prev, .next,.text {font-size: 11px}
-
-    #main__section-1__article{
-        height: 450px;
-    }
-
-    #main__section-2__article__img-1{
-        height: 170px;
-        width: 200px;
-    }#main__section-2__article__img-2{
-        height: 170px;
-        width: 300px;       
-    }#main__section-2__article__img-3{
-        height: 200px;
-        width: 200px;
-    }#main__section-2__article__img-4{
-        height: 120px;
-        width: 300px;
-    }
-
-    #main-contacto__container__parrafo{
-        width: 350px;
-        height: 250px;
-    }
-
-    #mapa{
-        width: 350px;
-        height: 400px;
-    }
-
-    #main-contacto__info-container{
-        flex-direction: column;
-        height: 120px;
-    }
-
-    #container-info-1, #container-info-2{
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-    
-
+#faq__main{
+    height: 800px;
+    background-image: url(../assets/loopbackground5.gif);
+    background-repeat: no-repeat !important;
+    background-position: center  !important;
+    background-size: cover;
 }
 
+#index__main__section-2{
+    background: linear-gradient(30deg, #280037, #3c0029,#002b58, #5a0015);
+    background-size: 300% 300%;
+    animation: fade 15s ease-in-out infinite;
+}
+#contacto__main__box{
+    height: 600px;
+}
+#header__login a{
+    font-family: Caviar;
+}
+#contacto__numero-email{
+    height: 50px;
+}#contacto__numero-email p{
+    font-family: CaviarBold !important;
+}
 
+#header__login a:hover{
+    color: yellow !important;
+}
+
+#main__container__noticia{
+    height: 800px;
+}#main__container__noticia p,b{
+    text-align: start;
+    font-family: arial;
+}
+#main__container__info{
+    height: 800px;
+}#main__container__info p,b{
+    text-align: center !important;
+}
+
+.juego{
+    height: 200px !important;
+}
+.container-clock {
+    text-align: center;
+    ;
+}
+
+.container-clock h1 {
+    font-size: 10rem;
+    font-weight: 400;
+}
+
+.container-clock p {
+    font-size: 2.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 @keyframes fade{
     0%{background-position: 0 50%;}
     30%{background-position: 100% 50%;}
@@ -541,4 +131,3 @@ footer p{
     font-family: "CaviarItalic";
     src: url(../assets/CaviarDreams_Italic.ttf);
 }
-
