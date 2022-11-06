@@ -78,7 +78,9 @@ footer {
 }#contacto__numero-email p{
     font-family: CaviarBold !important;
 }
-
+#index__main__navbar__dropdown{
+    font-family: CaviarBold !important;
+}
 #header__login a:hover{
     color: yellow !important;
 }
@@ -130,4 +132,23 @@ footer {
 }@font-face {
     font-family: "CaviarItalic";
     src: url(../assets/CaviarDreams_Italic.ttf);
+}
+
+@media (min-width: 576px) {
+   
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) { 
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1400px) {
+
 }
