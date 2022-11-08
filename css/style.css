@@ -5,24 +5,22 @@
 }
 
 header{
-    height: 80px;
+    height: 10vh;
     background: linear-gradient(30deg, #280037, #3c0029,#002b58, #5a0015);
     background-size: 300% 300%;
     animation: fade 15s ease-in-out infinite;
+}footer{
+    min-height: 5vh;
+    background-color: #280037;
 }
 
 p{
     font-family: Caviar;
-}
-
-b{
+}b{
     font-family: CaviarBold;
 }
 
-footer {
-    height: 30px;
-    background-color: #280037;
-}
+
 #juegos__main__container__boton-comprar{
     width: 80px;
 }
@@ -50,6 +48,12 @@ footer {
     background-repeat: no-repeat !important;
     background-position: center  !important;
     background-size: cover;
+}#faq__main{
+    min-height: 85vh;
+    background-image: url(../assets/loopbackground5.gif);
+    background-repeat: no-repeat !important;
+    background-position: center  !important;
+    background-size: cover;
 }
 
 #mapa{
@@ -58,13 +62,7 @@ footer {
     width: 370px;
 }
 
-#faq__main{
-    height: 55rem;
-    background-image: url(../assets/loopbackground5.gif);
-    background-repeat: no-repeat !important;
-    background-position: center  !important;
-    background-size: cover;
-}
+
 
 #index__main__section-2{
     background: linear-gradient(30deg, #280037, #3c0029,#002b58, #5a0015);
