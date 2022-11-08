@@ -11,76 +11,84 @@
 <body>
     <header class="container-fluid">
         <div class="row h-100 align-items-center">
-            <div class="col-4">
+            <div class="col-8 col-lg-4 col-sm-10 col-md-10 ">
                 <img class="img-fluid" src="../assets/logo-large.png" alt="DuckGames Inicio Logo">
             </div>
-            <nav class="col-6 d-flex d-sm-none d-md-none d-lg-flex justify-content-around text-light ps-4 pe-4 fs-4">
-                    <div class="navitem"><a class="text-light text-decoration-none" href="/index.html">INICIO</a></div>
-                    <div class="navitem"><a class="text-light text-decoration-none" href="./pages/juegos.html">JUEGOS</a></div>
-                    <div class="navitem"><a class="text-light text-decoration-none" href="./pages/noticias.html">NOTICIAS</a></div>
-                    <div class="navitem"><a class="text-light text-decoration-none" href="./pages/contacto.html">CONTACTO</a></div>
-                    <div class="navitem"><a class="text-light text-decoration-none" href="./pages/faq.html">FAQ</a></div>
+            <nav class="col-sm-6 d-flex d-none d-sm-none d-md-none d-lg-flex justify-content-around text-light ps-4 pe-4 fs-4">
+                    <div class="navitem"><a class="text-light text-decoration-none" href="../index.html">INICIO</a></div>
+                    <div class="navitem"><a class="text-light text-decoration-none" href="../pages/juegos.html">JUEGOS</a></div>
+                    <div class="navitem"><a class="text-light text-decoration-none" href="../pages/noticias.html">NOTICIAS</a></div>
+                    <div class="navitem"><a class="text-light text-decoration-none" href="../pages/contacto.html">CONTACTO</a></div>
+                    <div class="navitem"><a class="text-light text-decoration-none" href="../pages/faq.html">FAQ</a></div>
             </nav>
-            <li class="col-6 nav-item dropdown text-light d-lg-none fs-3 list-unstyled justify-content-end" id="index__main__navbar__dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Menú</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
-                    <li><a class="dropdown-item" href="../pages/juegos.html">Nuestros juegos!</a></li>
-                    <li><a class="dropdown-item" href="../pages/noticias.html">Las ultimas noticias!</a></li>
-                    <li><a class="dropdown-item" href="../pages/contacto.html">Contactanos!</a></li>
-                    <li><a class="dropdown-item" href="../pages/faq.html">FAQ</a></li>
-                </ul>
-            </li>            
-            <div id="header__login" class="col-2 text-center text-light d-sm-none d-md-none d-lg-flex">
+            <div class="col-4 col-sm-2 col-md-2 d-lg-none">
+                <li class="nav-item dropdown text-light fs-3 list-unstyled" id="index__main__navbar__dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Menú</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
+                        <li><a class="dropdown-item" href="../pages/juegos.html">Nuestros juegos!</a></li>
+                        <li><a class="dropdown-item" href="../pages/noticias.html">Las ultimas noticias!</a></li>
+                        <li><a class="dropdown-item" href="../pages/contacto.html">Contactanos!</a></li>
+                        <li><a class="dropdown-item" href="../pages/faq.html">FAQ</a></li>
+                    </ul>
+                </li>
+            </div>           
+            <div id="header__login" class="col-2 text-center text-light d-none d-sm-none d-md-none d-lg-flex">
                 <a class="text-light text-decoration-none" href="./pages/login.html">Bienvenido!<br>Inicia sesión acá!</a>
             </div>
         </div>
-    </header> 
+    </header>  
 
 
     <main id="juegos__main" class="container-fluid bg-danger">
 
         <div class="container pt-5"><b class="fs-1 text-light bg-black bg-opacity-75">Nuestros juegos!</b></div>
         
-
-        <div class="container pt-0 pb-5">
-
-            <div class="row bg-black juego mt-3 mb-5 d-flex bg-opacity-75">
-                <div class="col-3 p-0"><img class="" src="../assets/csgo.jpg" alt=""></div>
-                <div class="col-8 text-light d-flex align-items-center align-item-center fs-5">
-                    <p>ㅤCounter-Strike: Global Offensive (CS:GO) amplía el juego de acción por equipos
-                        del que fue pionera la franquicia cuando salió hace 19 años. CS:GO trae nuevos mapas,
-                        personajes, armas y modos de juego, y ofrece versiones actualizadas del contenido
-                        clásico de CS (de_dust2, etc.).</p>
-                </div>
-                <div class="col-1 d-flex align-items-center justify-content-center"><button class="">Comprar</button></div>
+        <div class="container mt-5 mt-5">
+            <div class="card mt-5 mb-5 bg-black bg-opacity-75">
+                <div class="row">
+                    <img class="col-12 col-sm-12 col-md-6 col-lg-4 h-100 img-fluid m-0 p-0" src="../assets/csgo.jpg" alt="csgo duckgames juegos comprar">
+                    
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-8 text-light p-4 p-sm-4 p-md-2">
+                        <h2 class="card-title mt-3">CSGO</h2>
+                        <p class="text-center" >ㅤCounter-Strike: Global Offensive (CS:GO) amplía el juego de acción por equipos
+                            del que fue pionera la franquicia cuando salió hace 19 años. CS:GO trae nuevos mapas,
+                            personajes, armas y modos de juego, y ofrece versiones actualizadas del contenido
+                            clásico de CS (de_dust2, etc.).</p>
+                        <button class="btn btn-success">Comprar!</button>
+                    </div>
+                </div>        
             </div>
-            
-            <div class="row bg-black juego mt-5 mb-5 d-flex bg-opacity-75">
-                <div class="col-3 p-0"><img class="" src="../assets/pubg.jpg" alt=""></div>
-                <div class="col-8 text-light d-flex align-items-center fs-5">
-                    <p>ㅤCounter-Strike: Global Offensive (CS:GO) amplía el juego de acción por equipos
-                        del que fue pionera la franquicia cuando salió hace 19 años. CS:GO trae nuevos mapas,
-                        personajes, armas y modos de juego, y ofrece versiones actualizadas del contenido
-                        clásico de CS (de_dust2, etc.).</p>
-                </div>
-                <div class="col-1 d-flex align-items-center justify-content-center"><button class="">Comprar</button></div>
+            <div class="card mt-5 mb-5 bg-black bg-opacity-75">
+                <div class="row">
+                    <img class="col-12 col-sm-12 col-md-6 col-lg-4 h-100 m-0 p-0" src="../assets/bo4.jpg" alt="blackops 4 duckgames juegos comprar">
+                    
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-8 text-light p-4 p-sm-4 p-md-2">
+                        <h2 class="card-title mt-3">COD:Black Ops 4</h2>
+                        <p class="text-center" >ㅤCall of Duty®: Black Ops 4 ofrece un combate multijugador fluido, asentado 
+                            y descarnado; con el mayor modo Zombi hasta la fecha con tres aventuras llenas 
+                            de no muertos; y con Blackout, donde el universo Black Ops cobra vida en dos 
+                            experiencias de Battle Royale. Black Ops 4 será la experiencia Call of Duty® 
+                            de videojuego de disparos para PC más refinada, sólida y personalizable.</p>
+                        <button class="btn btn-success">Comprar!</button>
+                    </div>
+                </div>        
             </div>
-
-            <div class="row bg-black juego mt-5 mb-5 d-flex bg-opacity-75">
-                <div class="col-3 p-0"><img class="" src="../assets/bo4.jpg" alt=""></div>
-                <div class="col-8 text-light d-flex align-items-center  fs-5">
-                    <p>ㅤCall of Duty®: Black Ops 4 ofrece un combate multijugador fluido, asentado 
-                        y descarnado; con el mayor modo Zombi hasta la fecha con tres aventuras llenas 
-                        de no muertos; y con Blackout, donde el universo Black Ops cobra vida en dos 
-                        experiencias de Battle Royale. Black Ops 4 será la experiencia Call of Duty® 
-                        de videojuego de disparos para PC más refinada, sólida y personalizable.</p>
-                </div>
-                <div class="col-1 d-flex align-items-center justify-content-center"><button class="">Comprar</button></div>
+            <div class="card mt-5 pb-5 bg-black bg-opacity-75">
+                <div class="row">
+                    <img class="col-12 col-sm-12 col-md-6 col-lg-4 h-100 img-fluid m-0 p-0" src="../assets/pubg.jpg" alt="csgo duckgames juegos comprar">
+                    
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-8 text-light p-4 p-sm-4 p-md-2">
+                        <h2 class="card-title mt-3">PUBG</h2>
+                        <p class="text-center" >ㅤJuega a PUBG: BATTLEGROUNDS gratis. Aterriza en ubicaciones estratégicas, 
+                            saquea armas y suministros, y sobrevive para ser el último equipo en pie 
+                            en campos de batalla distintos y diversos.</p>
+                        <button class="btn btn-success">Comprar!</button>
+                    </div>
+                </div>        
             </div>
-
-                 
         </div>
+
     </main>
 
 

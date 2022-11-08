@@ -11,31 +11,33 @@
 <body>
     <header class="container-fluid">
         <div class="row h-100 align-items-center">
-            <div class="col-4">
+            <div class="col-8 col-lg-4 col-sm-10 col-md-10 ">
                 <img class="img-fluid" src="../assets/logo-large.png" alt="DuckGames Inicio Logo">
             </div>
-            <nav class="col-6 d-flex d-sm-none d-md-none d-lg-flex justify-content-around text-light ps-4 pe-4 fs-4">
-                    <div class="navitem"><a class="text-light text-decoration-none" href="/index.html">INICIO</a></div>
-                    <div class="navitem"><a class="text-light text-decoration-none" href="./pages/juegos.html">JUEGOS</a></div>
-                    <div class="navitem"><a class="text-light text-decoration-none" href="./pages/noticias.html">NOTICIAS</a></div>
-                    <div class="navitem"><a class="text-light text-decoration-none" href="./pages/contacto.html">CONTACTO</a></div>
-                    <div class="navitem"><a class="text-light text-decoration-none" href="./pages/faq.html">FAQ</a></div>
+            <nav class="col-sm-6 d-flex d-none d-sm-none d-md-none d-lg-flex justify-content-around text-light ps-4 pe-4 fs-4">
+                    <div class="navitem"><a class="text-light text-decoration-none" href="../index.html">INICIO</a></div>
+                    <div class="navitem"><a class="text-light text-decoration-none" href="../pages/juegos.html">JUEGOS</a></div>
+                    <div class="navitem"><a class="text-light text-decoration-none" href="../pages/noticias.html">NOTICIAS</a></div>
+                    <div class="navitem"><a class="text-light text-decoration-none" href="../pages/contacto.html">CONTACTO</a></div>
+                    <div class="navitem"><a class="text-light text-decoration-none" href="../pages/faq.html">FAQ</a></div>
             </nav>
-            <li class="col-6 nav-item dropdown text-light d-lg-none fs-3 list-unstyled justify-content-end" id="index__main__navbar__dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Menú</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
-                    <li><a class="dropdown-item" href="../pages/juegos.html">Nuestros juegos!</a></li>
-                    <li><a class="dropdown-item" href="../pages/noticias.html">Las ultimas noticias!</a></li>
-                    <li><a class="dropdown-item" href="../pages/contacto.html">Contactanos!</a></li>
-                    <li><a class="dropdown-item" href="../pages/faq.html">FAQ</a></li>
-                </ul>
-            </li>            
-            <div id="header__login" class="col-2 text-center text-light d-sm-none d-md-none d-lg-flex">
+            <div class="col-4 col-sm-2 col-md-2 d-lg-none">
+                <li class="nav-item dropdown text-light fs-3 list-unstyled" id="index__main__navbar__dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Menú</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
+                        <li><a class="dropdown-item" href="../pages/juegos.html">Nuestros juegos!</a></li>
+                        <li><a class="dropdown-item" href="../pages/noticias.html">Las ultimas noticias!</a></li>
+                        <li><a class="dropdown-item" href="../pages/contacto.html">Contactanos!</a></li>
+                        <li><a class="dropdown-item" href="../pages/faq.html">FAQ</a></li>
+                    </ul>
+                </li>
+            </div>           
+            <div id="header__login" class="col-2 text-center text-light d-none d-sm-none d-md-none d-lg-flex">
                 <a class="text-light text-decoration-none" href="./pages/login.html">Bienvenido!<br>Inicia sesión acá!</a>
             </div>
         </div>
-    </header>     
+    </header>       
 
     <main class="container-fluid bg-black" id="faq__main">
         <div class="container pt-5"><b class="fs-1 text-light bg-black bg-opacity-75">Preguntas frecuentes!</b></div>
