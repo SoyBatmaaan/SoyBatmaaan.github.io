@@ -10,11 +10,11 @@
 </head>
 <body>
     <header class="container-fluid">
-        <div class="row h-100 align-items-center">
-            <div class="col-8 col-lg-4 col-sm-10 col-md-10 ">
+        <div class="row h-100 align-items-center" id="header__row">
+            <div class="col-8 col-lg-4 col-sm-10 col-md-10" id="header__row__logo-container">
                 <img class="img-fluid" src="./assets/logo-large.png" alt="DuckGames Inicio Logo">
             </div>
-            <nav class="col-sm-6 d-flex d-none d-sm-none d-md-none d-lg-flex justify-content-around text-light ps-4 pe-4 fs-4">
+            <nav class="col-sm-6 d-flex d-none d-sm-none d-md-none d-lg-flex justify-content-around text-light ps-4 pe-4 fs-4" id="header__row__buttons">
                     <div class="navitem"><a class="text-light text-decoration-none" href="/index.html">INICIO</a></div>
                     <div class="navitem"><a class="text-light text-decoration-none" href="./pages/juegos.html">JUEGOS</a></div>
                     <div class="navitem"><a class="text-light text-decoration-none" href="./pages/noticias.html">NOTICIAS</a></div>
@@ -22,7 +22,7 @@
                     <div class="navitem"><a class="text-light text-decoration-none" href="./pages/faq.html">FAQ</a></div>
             </nav>
             <div class="col-4 col-sm-2 col-md-2 d-lg-none">
-                <li class="nav-item dropdown text-light fs-3 list-unstyled" id="index__main__navbar__dropdown">
+                <li class="nav-item dropdown text-light fs-3 list-unstyled" id="header__row__dropdown">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Menú</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="./index.html">Inicio</a></li>
@@ -33,17 +33,15 @@
                     </ul>
                 </li>
             </div>           
-            <div id="header__login" class="col-2 text-center text-light d-none d-sm-none d-md-none d-lg-flex">
+            <div id="header__row__login" class="col-2 text-center text-light d-none d-sm-none d-md-none d-lg-flex">
                 <a class="text-light text-decoration-none" href="./pages/login.html">Bienvenido!<br>Inicia sesión acá!</a>
             </div>
         </div>
     </header>
 
     <main id="index__main" class="container-fluid pt-5 pb-5 ps-0 pe-0">
-
-        <div class="container pt-5"><b class="fs-1 text-light">Juegos destacados!</b></div>
-
-        <section class="container pt-1 pb-5">
+        <div class="container pt-5" id="index__main__titulo"><b class="fs-1 text-light">Juegos destacados!</b></div>
+        <section class="container pt-1 pb-5" id="index__main__section-1">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -80,7 +78,7 @@
         </article>
     </main>
 
-    <section class="container-fluid text-center text-light pt-4 pb-4" id="index__main__section-2">
+    <section class="container-fluid text-center text-light pt-4 pb-4" id="index__section-2">
         <b class="fs-1">Herramientas y Patrocinadores</b>
         <div class="d-lg-flex justify-content-lg-around mt-5 mb-5 flex-lg-row d-sm-flex flex-column justify-content-center align-items-center" id="index__main__section-2__container">
             <img class="mb-5 mb-sm-5 mb-lg-0" src="./assets/UE_white.png" alt="">

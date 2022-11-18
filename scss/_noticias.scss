@@ -1,0 +1,23 @@
+#noticias__main{
+    height: 1000px;
+    background-image: url(/assets/loopbackground.gif) !important;
+    background-repeat: no-repeat !important;
+    background-position: center  !important;
+    background-size: cover;
+    #noticias__main__container{
+        #noticias__main__container__noticia{
+            height: 800px;
+            #noticias__main__container__noticia p,b{
+                text-align: start;
+                font-family: arial;
+            }
+        }
+        #noticias__main__container__info{
+            height: 800px;
+            #noticias__main__container__info p,b{
+                text-align: center !important;
+            }
+        }
+    }
+    
+}
