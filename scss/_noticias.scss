@@ -4,17 +4,17 @@
     background-repeat: no-repeat !important;
     background-position: center  !important;
     background-size: cover;
-    #noticias__main__container{
-        #noticias__main__container__noticia{
+    #noticias__main__row{
+        #noticias__main__row__noticia{
             height: 800px;
-            #noticias__main__container__noticia p,b{
+            #noticias__main__row__noticia p,b{
                 text-align: start;
                 font-family: arial;
             }
         }
-        #noticias__main__container__info{
+        #noticias__main__row__info{
             height: 800px;
-            #noticias__main__container__info p,b{
+            #noticias__main__row__info p,b{
                 text-align: center !important;
             }
         }
