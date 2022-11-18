@@ -1,0 +1,107 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+p {
+  font-family: url(../assets/CaviarDreams.ttf); }
+
+b {
+  font-family: url(../assets/CaviarDreams_Bold.ttf); }
+
+header {
+  height: 10vh;
+  background: linear-gradient(30deg, #280037, #3c0029, #002b58, #5a0015);
+  background-size: 300% 300%;
+  animation: fade 15s ease-in-out infinite; }
+  header #header__row #header__row__dropdown {
+    font-family: url(../assets/CaviarDreams_Bold.ttf) !important; }
+  header #header__row #header__row__login a {
+    font-family: url(../assets/CaviarDreams.ttf); }
+    header #header__row #header__row__login a:hover {
+      color: yellow !important; }
+
+#index__main {
+  background-color: palevioletred;
+  background-image: url(/assets/sunset.gif) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: bottom; }
+
+#index__section-2 {
+  background: linear-gradient(30deg, #280037, #3c0029, #002b58, #5a0015);
+  background-size: 300% 300%;
+  animation: fade 15s ease-in-out infinite; }
+
+#juegos__main {
+  background-image: url(/assets/retrocity.gif) !important;
+  background-repeat: no-repeat !important;
+  background-position: center  !important;
+  background-size: cover; }
+
+#noticias__main {
+  height: 1000px;
+  background-image: url(/assets/loopbackground.gif) !important;
+  background-repeat: no-repeat !important;
+  background-position: center  !important;
+  background-size: cover; }
+  #noticias__main #noticias__main__row #noticias__main__row__noticia {
+    height: 800px; }
+    #noticias__main #noticias__main__row #noticias__main__row__noticia #noticias__main__row__noticia p, #noticias__main #noticias__main__row #noticias__main__row__noticia b {
+      text-align: start;
+      font-family: arial; }
+  #noticias__main #noticias__main__row #noticias__main__row__info {
+    height: 800px; }
+    #noticias__main #noticias__main__row #noticias__main__row__info #noticias__main__row__info p, #noticias__main #noticias__main__row #noticias__main__row__info b {
+      text-align: center !important; }
+
+#contacto__main {
+  height: 1000px;
+  background-image: url(/assets/arcaderetro.gif) !important;
+  background-repeat: no-repeat !important;
+  background-position: center  !important;
+  background-size: cover; }
+  #contacto__main #contacto__main__box {
+    height: 600px; }
+    #contacto__main #contacto__main__box #contacto__main__box__mapa {
+      margin: 0px;
+      height: 350px;
+      width: 370px; }
+  #contacto__main #contacto__main__numero-email p {
+    font-family: url(../assets/CaviarDreams_Bold.ttf) !important; }
+
+#faq__main {
+  min-height: 85vh;
+  background-image: url(../assets/loopbackground5.gif);
+  background-repeat: no-repeat !important;
+  background-position: center  !important;
+  background-size: cover; }
+
+footer {
+  min-height: 5vh;
+  background-color: #280037; }
+
+@keyframes fade {
+  0% {
+    background-position: 0 50%; }
+  30% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0 50%; } }
+
+@media (min-width: 576px) {
+  #mapa {
+    height: 400px;
+    width: 450px; } }
+
+@media (min-width: 768px) {
+  #mapa {
+    width: 425px; } }
+
+@media (min-width: 992px) {
+  #mapa {
+    width: 500px; } }
+
+@media (min-width: 1200px) {
+  #mapa {
+    width: 550px; } }

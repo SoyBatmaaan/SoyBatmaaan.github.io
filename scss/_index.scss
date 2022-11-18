@@ -1,0 +1,14 @@
+#index__main{
+    background-color: palevioletred;
+    background-image: url(/assets/sunset.gif) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: bottom;
+}
+// Section 2, esta afuera de MAIN por MI necesidad.
+#index__section-2{
+    background: linear-gradient(30deg, #280037, #3c0029,#002b58, #5a0015);
+    background-size: 300% 300%;
+    animation: fade 15s ease-in-out infinite;
+    
+}
