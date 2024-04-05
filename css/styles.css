@@ -1,0 +1,98 @@
+.head{
+    margin-left: 100;
+    padding-right: 47%;
+}
+
+  .card {
+    border: 0cap;
+        
+  }
+  .card-img {
+    border: 3px solid black;
+    border-radius: 0;
+  }
+  
+  .vgr-cards {
+    .card {
+      display: flex;
+      flex-flow: wrap;
+      flex: 100%;
+      margin-bottom: 40px;
+  
+      &:nth-child(even) .card-img-body {
+        order: 2;
+      }
+  
+      &:nth-child(even) .card-body {
+        padding-left: 0;
+        padding-right: 1.25rem; 
+      }
+      
+      @media (max-width: 576px) {
+        display: block;
+      }
+      
+    }
+  
+    .card-img-body {
+      flex: 1;
+      overflow: hidden;
+      position: relative;
+      
+      @media (max-width: 576px) {
+        width: 100%;
+        height: 200px;
+            margin-bottom: 20px;
+      }
+      
+    }
+    
+    .card-img {
+      width: 100%;
+      height: 100%;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      
+      
+      @media (max-width: 1140px) {
+            margin: 0;
+      transform: none;
+      width: 100%;
+      height: auto;
+      }
+      
+    }
+  
+    .card-body {
+        font-family: Caviar; 
+      flex: 2;
+      padding: 1.25rem;
+      
+      @media (max-width: 576px) {
+        padding: 0;
+      }
+      
+    }
+  }
+.card-title{
+    font-weight: bold;
+}
+.cmt{
+    margin-top: 9%;
+}
+body{
+    background-image: url(/assets/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@font-face {
+    font-family: Caviar;
+    src: url(/assets/CaviarDreams.ttf);
+}
+@font-face {
+    font-family: Caviar-bold;
+    src: url(/assets/CaviarDreams_Bold.ttf);
+}
+.cavi{
+    font-family: Caviar-bold;
+}
