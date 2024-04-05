@@ -1,98 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>DUCKGAMES</title>
+    <title>The place</title> 
+    <link rel="icon" type="image/x-icon" href="/assets/favicon25x25.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+
 </head>
 <body>
-    <header class="container-fluid">
-        <div class="row h-100 align-items-center" id="header__row">
-            <div class="col-8 col-lg-4 col-sm-10 col-md-10" id="header__row__logo-container">
-                <img class="img-fluid" src="./assets/logo-large.png" alt="DuckGames Inicio Logo">
-            </div>
-            <nav class="col-sm-6 d-flex d-none d-sm-none d-md-none d-lg-flex justify-content-around text-light ps-4 pe-4 fs-4" id="header__row__buttons">
-                    <div class="navitem"><a class="text-light text-decoration-none" href="/index.html">INICIO</a></div>
-                    <div class="navitem"><a class="text-light text-decoration-none" href="./pages/juegos.html">JUEGOS</a></div>
-                    <div class="navitem"><a class="text-light text-decoration-none" href="./pages/noticias.html">NOTICIAS</a></div>
-                    <div class="navitem"><a class="text-light text-decoration-none" href="./pages/contacto.html">CONTACTO</a></div>
-                    <div class="navitem"><a class="text-light text-decoration-none" href="./pages/faq.html">FAQ</a></div>
-            </nav>
-            <div class="col-4 col-sm-2 col-md-2 d-lg-none">
-                <li class="nav-item dropdown text-light fs-3 list-unstyled" id="header__row__dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Menú</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="./index.html">Inicio</a></li>
-                        <li><a class="dropdown-item" href="./pages/juegos.html">Nuestros juegos!</a></li>
-                        <li><a class="dropdown-item" href="./pages/noticias.html">Las ultimas noticias!</a></li>
-                        <li><a class="dropdown-item" href="./pages/contacto.html">Contactanos!</a></li>
-                        <li><a class="dropdown-item" href="./pages/faq.html">FAQ</a></li>
-                    </ul>
-                </li>
-            </div>           
-            <div id="header__row__login" class="col-2 text-center text-light d-none d-sm-none d-md-none d-lg-flex">
-                <a class="text-light text-decoration-none" href="./pages/login.html">Bienvenido!<br>Inicia sesión acá!</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
+        <div class="container-fluid">
+          <a>
+           <img src="/assets/favicon25x25.png" >
+          </a>
+          <h1 class="head">The Place</h1>
+        </div>
+    </nav>
+
+    <main class="pt-5">
+        <br><br><br>
+        <h1 class="mt-5 text-light text-center cavi">Culturas del Mundo: Un Viaje de Descubrimiento Global</h1>
+        <div class="container cmt mb-5">
+            <div class="card-group vgr-cards">
+              <div class="card">
+                <div class="card-img-body">
+                <img class="card-img" src="/assets/alemania.jpg" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">Alemania</h4>
+                  <p class="card-text">Alemania fundada en 1871  tras la victoria de Prusia en la Guerra franco-prusiana, es hoy en dia uno de los mayores paises del mundo con una población es de 84.300.000 habitantes es el 3er pais mas poblado de europa. alemania a tenido un gran impacto en los ambitos del arte y musica, ha sido hogar de algunos de los compositores más influyentes de todos los tiempos, como Johann Sebastian Bach y Ludwig van Beethoven tambien fue sede de grandes e importantes movimientos artisticos como el renacentista, gotico y barroco. En el ámbito de la literatura, Johann Wolfgang von Goethe es considerado uno de los más importantes literatos de la historia.</p>
+                  <b>Queres saber mas de alemania?</b>
+                  <p></p>
+                  <a href="https://www.youtube.com/watch?v=fo6naN4vAlk&ab_channel=Lifeder" class="btn btn-outline-primary">ver mas</a>
+                  <a href="https://www.elosoberlin.com/la-cultura-alemana.html" class="btn btn-outline-primary">leer mas</a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-img-body">
+                  <img class="card-img" src="/assets/grecia.jpg" alt="Card image cap"></div>
+                <div class="card-body p-3">
+                  <h4 class="card-title">Grecia</h4>
+                  <p class="card-text">Grecia fue oficialmente fundada en 1830 tras la guerra de independencia griega pero su cultura y civilización surgieron en el 1200 a.C. tras una invación de pueblos dorios y jónicos y la fusión de las culturas dio comienzo a la civilización griega.  Los griegos antiguos fueron pioneros en el desarrollo del arte y la arquitectura. Se destacaron en la escultura, con obras maestras como la Venus de Milo y el Discóbolo de Mirón tambien en la filosofía. La filosofía griega fue revolucionaria en su época y sigue siendo influyente en la actualidad. Filósofos como Sócrates, Platón y Aristóteles sentaron las bases del pensamiento occidental en áreas como la ética, la metafísica y la lógica. </p>
+                  <b>Queres saber mas de grecia?</b>
+                  <p></p>
+                  <a href="https://www.youtube.com/watch?v=9LMlD7L4Vdk" class="btn btn-outline-primary">ver mas</a>
+                  <a href="https://www.grecia.info/es/info/historia-arte-cultura-de-grecia/" class="btn btn-outline-primary">leer mas</a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-img-body">
+                  <img class="card-img" src="/assets/Akihabara.png" alt="Card image cap"></div>
+                <div class="card-body">
+                  <h4 class="card-title">Japon</h4>
+                  <p class="card-text">Japon fue oficialmente fundado en 660 a.C. por el emperador jimmu aunque hay evidencia de su cultura y civilización que ubica sus comienzos en el año 13.000 a.C. . Japón tiene una rica tradición religiosa que incluye el budismo y el sintoísmo. Ambas religiones han tenido una profunda influencia en la cultura y las tradiciones japonesas tambien s conocido por su cultura popular, que incluye el manga (cómic japonés) y el anime (animación japonesa), que han ganado seguidores en todo el mundo. La cultura pop japonesa también incluye la música J-Pop y la moda Harajuku.  </p>
+                  <b>Queres saber mas de japon?</b>
+                  <p></p>
+                  <a href="https://www.youtube.com/watch?v=0haa5NZn8wE" class="btn btn-outline-primary">ver mas</a>
+                  <a href="https://humanidades.com/cultura-de-japon/" class="btn btn-outline-primary">leer mas</a>
+                </div>
+              </div>
+              
             </div>
         </div>
-    </header>
-
-    <main id="index__main" class="container-fluid pt-5 pb-5 ps-0 pe-0">
-        <div class="container pt-5" id="index__main__titulo"><b class="fs-1 text-light">Juegos destacados!</b></div>
-        <section class="container pt-1 pb-5" id="index__main__section-1">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <a href="./pages/juegos.html"><img src="./assets/c1.jpg" class="d-block w-100" alt="Call of Duty: Black Ops 4"></a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="./pages/juegos.html"><img src="./assets/c2.jpg" class="d-block w-100" alt="PlayerUnknown's Battlegrounds"></a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="./pages/juegos.html"><img src="./assets/c3.jpg" class="d-block w-100" alt="Counter-Strike: Global Offensive"></a>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </section>
-
-        <article class="container-fluid bg-black bg-opacity-75 text-light text-center mt-5 mb-5 pt-4 pb-4 ps-4 pe-4">
-            <b class="fs-1">¡Somos DUCKGAMES!</b>
-            <p class="fs-5">Fundada en 2004, DUCKGAMES (DG) 
-                es una organización sin fines de lucro compuesta por estudios y desarrolladores de
-                videojuegos que trabajan para promover el crecimiento del entretenimiento digital
-                e interactivo producido en Argentina.
-                DG es una institución intermedia que articula acciones entre los estudios y 
-                emprendedores dedicados al desarrollo de videojuego y el sector público, el sector 
-                privado y la academia, impulsando y potenciando el desarrollo de la industria local de videojuegos.
-            </P>
-        </article>
+        <div class="p-3 text-center fs-5 text-light bg-dark bg-opacity-75 mt-5 mb-5 pl-5 pr-5">
+            <p class="cavi as">En un mundo lleno de diversidad y riqueza cultural, cada país aporta una pieza única al tapiz de la humanidad. Desde las antiguas tradiciones de oriente hasta las vibrantes expresiones artísticas de occidente, la variedad cultural es un tesoro que enriquece nuestras vidas. Es importante valorar y respetar estas diferencias, pues son la esencia de nuestra identidad global. Al explorar y comprender otras culturas, ampliamos nuestros horizontes y creamos puentes que conectan a las personas más allá de las fronteras. Te invitamos a seguir descubriendo y aprendiendo sobre las maravillosas culturas que enriquecen nuestro mundo. ¡Bienvenidos a un viaje de descubrimiento cultural!</p>
+        </div>
+        <footer class="bg-light pt-4 pb-1  text-center"> 
+            <p class="cavi">¿Quieres saber más sobre las culturas del mundo? ¡Contáctanos!  llamarnos al +54 11 4321-1234 o escribirnos a theway@gmail.com Devs: <a href="https://github.com/SoyBatmaaan?tab=repositories">Diaz Bruno</a> (Github) - <a href="https://github.com/MartinHossein?tab=repositories">Hossein Martin</a> (Github)</p>
+            <img src="/assets/favicon25x25.png" class=" mb-2" height="25px" width="25px">
+        </footer>
+        
     </main>
 
-    <section class="container-fluid text-center text-light pt-4 pb-4" id="index__section-2">
-        <b class="fs-1">Herramientas y Patrocinadores</b>
-        <div class="d-lg-flex justify-content-lg-around mt-5 mb-5 flex-lg-row d-sm-flex flex-column justify-content-center align-items-center" id="index__main__section-2__container">
-            <img class="mb-5 mb-sm-5 mb-lg-0" src="./assets/UE_white.png" alt="">
-            <img class="mb-5 mt-5 mb-sm-5 mt-sm-4 mt-lg-0" src="./assets/binance-logo-1.png" alt="">
-            <img class="mt-5 mt-sm-5 mt-lg-0" src="./assets/venture_capital.png" alt="">
-        </div>
-    </section>
 
-
-    <footer class="container-fluid text-light text-center">
-        <p>Las marcas y logos de duckgames.com | duckgames.com/tv | duckgames.com/catalogo son propiedad de Newton Station SRL
-            Todos los derechos reservados 2022</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 </body>
 </html>
